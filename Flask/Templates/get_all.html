@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Get_all</title>
+</head>
+<body>
+    <table border = "5">
+        <tr>
+            <th>name</th>
+            <th>tel</th>
+            <th>adress_A</th>
+            <th>adress_B</th>
+        </tr>
+        <tr>
+            {% for key, value in user.items() %}
+            <th>{{value}}</th>
+            {% endfor%}
+        </tr>
+    </table>
+    <table border = "5">
+        <tr>
+            <th>Id</th>
+        </tr>
+        <tr>
+            {% for key, value in taxi.items() %}
+            <th>{{value}}</th>
+            {% endfor%}
+        </tr>
+    </table>
+</body>
+</html>
